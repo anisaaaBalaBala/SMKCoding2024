@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Makanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Pemesanan Makanan</h1>
+        <form action="submit_pesanan.php" method="post">
+            <label for="nama">Nama Pemesan:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+            <label for="makanan">Pilih Makanan:</label>
+            <select id="makanan" name="makanan" required>
+                <option value="">-- Pilih Makanan --</option>
+                <option value="nasi_goreng">Nasi Goreng</option>
+                <option value="mie_goreng">Mie Goreng</option>
+                <option value="sate_ayam">Sate Ayam</option>
+                <option value="bakso">Bakso</option>
+            </select>
+
+            <label for="jumlah">Jumlah Porsi:</label>
+            <input type="number" id="jumlah" name="jumlah" placeholder="Masukkan jumlah porsi" required min="1">
+
+            <label for="catatan">Catatan Tambahan:</label>
+            <textarea id="catatan" name="catatan" placeholder="Tambahkan catatan (opsional)"></textarea>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+    </div>
+</body>
+</html>
